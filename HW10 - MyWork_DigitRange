@@ -1,0 +1,22 @@
+public class digitRange {
+    public static void main(String[] args) {
+        System.out.println(digitRange(3592));
+        System.out.println(digitRange(68437));
+        System.out.println(digitRange(54972));
+    } //wasn't sure if this was the test case, these are three 'test cases'
+
+    public static int digitRange(int n) {
+        int max = n % 10, min = n % 10;
+        n /= 10;
+        while (n > 0) {
+            if (n % 10 > max) {
+                max = n % 10;
+            }
+            if (n % 10 < min) {
+                min = n % 10;
+            }
+            n /= 10;
+        }
+        return max - min + 1;
+    } // outputs 8,6,8
+}
