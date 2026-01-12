@@ -1,0 +1,33 @@
+public class caesarCipher {
+    public caesarCipher(String message, int key) {
+    }
+
+    public static void main(String[] args) {
+        Scanner170 scanner = new Scanner170(System.in);
+
+        System.out.print("Your message? ");
+        String message = scanner.nextLine();
+        System.out.print("Encoding Key? ");
+        int encodeKey = scanner.nextInt();
+
+        message = caesarCipher(message, encodeKey);
+        System.out.println(message);
+
+    }
+
+    public static String caesarCipher(String message, int encodeKey) {
+        StringBuilder encodedMessage = new StringBuilder();
+        String encoded = "";
+        message = message.toUpperCase();
+        int letterInAlphabet = 26;
+        for (int i = 0; i < message.length(); i++) {
+            char letter = message.charAt(i);
+            if (letter >= 'A' && letter <= 'Z') {
+                letter -= 'A';
+                letter = (char) ((letter + encodeKey) % letterInAlphabet + 'A');
+            }
+            encoded += letter;
+        }
+        return encoded;
+    }
+}
