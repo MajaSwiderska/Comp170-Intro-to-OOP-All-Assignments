@@ -1,0 +1,18 @@
+public class PhysicsEquation {
+    public static void main(String[] args) {
+
+        double t;
+        t = Console.promptDouble("Enter the value for t:");
+        double a;
+        a = Console.promptDouble("Enter the value for a:");
+        double v0;
+        v0 = Console.promptDouble("Enter the value for v0:");
+        double s0;
+        s0 = Console.promptDouble("Enter the value for s0:");
+        double s;
+        s = s0 + (v0 * t) + (0.5 * a * t * t);
+
+        System.out.println("Using the values " + t + " sec, " + a + " acceleration, velocity of " + v0 + " and " + s0 + " s0.The value for s is: " + s);
+    }
+}
+
