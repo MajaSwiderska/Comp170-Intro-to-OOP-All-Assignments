@@ -1,0 +1,7 @@
+Students are often asked to write term papers containing a certain number of words. Counting words in a long paper is a tedious task, but the computer can help. Write a program WordCount.java that counts the number of words, lines, and total characters (not including whitespace) in a paper, assuming that consecutive words are separated either by spaces or end-of-line characters.
+
+In the Virtual Machine, download and use the attached hamlet.txt file as the input for your program. Put it in the my_Java_programs/src folder and use CheckIO.findFile("hamlet.txt") to connect a File object to it for WordCount.
+
+You must write your program using Notepad++ in the IntelliJ my Java Programs/src folder and compile and run it using the Windows 10 VM command line!
+
+See the attached PowerPoint file for information about how to do that.
