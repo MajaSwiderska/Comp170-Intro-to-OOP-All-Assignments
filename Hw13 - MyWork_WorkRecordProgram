@@ -1,0 +1,33 @@
+public class WorkRecordProgram {
+    private String name;
+    private int hours;
+
+    public WorkRecordProgram(String name) {
+        this.name = name;
+        this.hours = 0;
+    }
+
+    public int getHours() {
+        return this.hours;
+    }
+
+    public void addHours(int moreHours) {
+        this.hours += moreHours;
+    }
+
+    public String toString() {
+        return this.name + ": " + this.hours + " hours";
+    }
+}
+
+public class WorkRecordPrograms {
+    public static void main(String[] args) {
+        WorkRecordProgram workHoursAndy = new WorkRecordProgram("Andy work hours is: ");
+        WorkRecordProgram workHoursGeorge = new WorkRecordProgram("George work hours is: ");
+        workHoursGeorge.addHours(3);
+        System.out.println(workHoursGeorge.getHours());
+        workHoursGeorge.addHours(2);
+        System.out.println(workHoursAndy);
+        System.out.println(workHoursGeorge);
+    }
+}
