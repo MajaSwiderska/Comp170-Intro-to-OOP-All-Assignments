@@ -1,0 +1,12 @@
+Write a program that implements the Caesar Cipher required by this Programming Project.
+
+Example:
+Your message? Attack zerg at dawn
+Encoding key? 3
+Your message: DWWDFN CHUJ DW GDZQ
+
+Clarifications: Use a method for the cipher (maybe public static String ceasarCipher(String inputMessage, int shift) that is called from main.  Main must prompt the user for both a message to be encrypted and the encoding key number using Scanner170.  If you use ceasarCipher as shown, then main must print out the result.  Notice the result is in all UPPERCASE letters.  We learned a while ago about the String class method toUpperCase() which will be helpful. Then notice that blanks are not changed (not shifted) - one way to do this is to test each character in inputMessage to see if it is a blank.  Another way is to shift only the characters 'A' to 'Z' (since a blank is not in that range). 
+
+Write pseudo code and write an cumulative algorithm that builds a String for the return value one character at a time.
+
+To do good testing call your method at least twice from main with different inputs and shifts. One way to test is to use the result of the first test as the input to the second test.  If you use the negative of the original shift key you should get back the original message!
