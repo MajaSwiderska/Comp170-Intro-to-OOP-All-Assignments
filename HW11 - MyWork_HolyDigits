@@ -1,0 +1,41 @@
+// most likely this is wrong, not 100% sure on what methods to use to get the right output .... output is 4768
+//Textbook was used, going between using while loops or boolean type in this code
+
+public class holyDigits {
+    public static void main(String[] args) {
+
+        int number = 1000;
+
+        boolean loop = false;
+
+        while (number < 10000 && !loop) {
+            int num = number;
+            int thousand = num / 1000;
+            num %= 1000;
+            int hundred = num / 100;
+            num %= 100;
+            int ten = num / 10;
+            int single = num % 10;
+
+            if (digits(number, thousand, hundred, ten, single) && isTen(thousand, ten) && sum25(thousand, hundred, ten, single)) {
+                System.out.println("The address is: " + number);
+                loop = true;
+            }
+            number += 2;
+        }
+    }
+
+    public static boolean isTen(int ten, int thousand) {
+        return thousand == 2 * ten;
+    }
+
+    public static boolean sum25(int ten, int thousand, int single, int hundred) {
+        return thousand + hundred + ten + single == 25;
+    }
+
+    public static boolean digits(int number, int thousand, int hundred, int ten, int single) {
+        return thousand != hundred && thousand != ten && thousand != single && hundred != ten && hundred != single && ten != single;
+        // when I tried putting each on separate lines, error popped up so i put them in one line. I first used || and then switched to &&.
+
+    }
+}
