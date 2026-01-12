@@ -1,0 +1,22 @@
+public class printTriangleType {
+    public static void main(String[] args) {
+        printTriangleType(5, 7, 7);
+        printTriangleType(6, 6, 6);
+        printTriangleType(5, 7, 8);
+        printTriangleType(2, 18, 2);
+    }
+
+    public static void printTriangleType(int a, int b, int c) {
+        if (a == b && b == c) {
+            System.out.println("equilateral");
+            if (a == b || a == c || b == c) {
+                System.out.println("isosceles");
+            } else {
+                System.out.println("scalene");
+            }
+            if (a + b < c || b + c < a || a + c < b) {
+                throw new IllegalArgumentException("Invalid Triangle side");
+            }
+        }
+    }
+}
