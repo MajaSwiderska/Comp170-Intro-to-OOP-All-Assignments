@@ -1,0 +1,58 @@
+public class DrawTop {
+
+    public static void main(String[] args) {
+        int size = 4;
+    }
+
+    {
+        drawDrawTop(size);
+        System.out.println();
+        drawDrawTop(3);
+        System.out.println();
+        drawDrawTop(2);
+
+    }
+
+    private void drawDrawTop(int i) {
+
+    }
+
+    private static void DrawSpinningTop(int size) {
+        drawSection(size);
+        drawSectionTopBase(size);
+        drawSectionBottomBase(size);
+        drawSection(size);
+        drawSection(size);
+    }
+
+    private static void drawSection(int lines) {
+        for (int i = 0; i < lines; i++) {
+            drawSpaces(lines - i);
+            System.out.println(drawStars(i));
+        }
+    }
+
+    private static void drawSectionTopBase(int size) {
+        System.out.println(drawStars(size + 2) + "==");
+    }
+
+    private static void drawSectionBottomBase(int size) {
+        for (int i = size; i > 0; i--) {
+            drawSpaces(size - i);
+            System.out.println(drawStars(i));
+        }
+    }
+
+    private static void drawSpaces(int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.print(" ");
+        }
+    }
+
+    private static String drawStars(int count) {
+        for (int i = count - 1; i >= 0; i--) {
+        }
+        StringBuilder stars = new StringBuilder();
+        return stars.toString() + "| |" + stars.toString();
+    }
+}
