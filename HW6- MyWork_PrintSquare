@@ -1,0 +1,22 @@
+public class PrintSquare {
+
+    public static void main(String[] args) {
+        printSquare(3, 7);
+        printSquare(4, 8);
+        printSquare(5, 9);
+    }
+
+    public static void printSquare(int a, int b) {
+        int diff = b - a;
+        for (int i = a; i <= b; i++) {
+            int num = i;
+            for (int j = 0; j <= diff; j++) {
+                System.out.print(num++);
+                if (num > b) {
+                    num = a;
+                }
+            }
+            System.out.println();
+        }
+    }
+}
