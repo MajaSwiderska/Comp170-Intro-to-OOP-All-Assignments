@@ -1,0 +1,33 @@
+public class Gpa {
+    public static void printGpa(Scanner170 console) {
+        System.out.print("");
+        String name = console.next();
+        int numScores = console.nextInt();
+
+        int sum = 0;
+        for (int i = 0; i < numScores; i++) {
+            int score = console.nextInt();
+            sum += score;
+        }
+
+        double gpa = (double) sum / numScores;
+        System.out.printf("%s's grade is %.2f\n", name, gpa);
+
+    }
+
+    public static void main(String[] args) {
+        Scanner170 scanner = new Scanner170(System.in);
+
+        System.out.println("Enter a student's record: Maria 5 72 91 84 89 78");
+        printGpa(new Scanner170(" Maria 5 72 91 84 89 78"));
+
+        System.out.println("Enter a student's record: Jordan 4 86 71 62 90");
+        printGpa(new Scanner170("Jordan 4 86 71 62 90"));
+
+        System.out.println("Enter a student's record: Sarah 3 90 85 838 99");
+        printGpa(new Scanner170("Sarah 3 90 85 88 99"));
+
+        scanner.close();
+    }
+}
+
