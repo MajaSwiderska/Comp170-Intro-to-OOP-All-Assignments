@@ -1,0 +1,19 @@
+Write code for this assignment to declare variables for s, t, s0, v0, and a, then use Console to get input from the user to give a value for each of the variables t, s0, v0, and a.  Finally write a Java statement to compute s, and display the result. Turn in your .java file here.
+
+To read a value into one of the variables, you can do something like this in main:
+double t = Console.promptDouble("Enter a value for t:");
+
+Alternatively, you could do this:
+Console.println("Enter a value for t:"); // or Console.print("Enter a value for t: ");
+double t = Console.readDouble();
+
+You will need to have access to the textbook in order to complete this exercise.
+
+Here's a recommended approach:
+
+Create a new Physics program in my_java_programs/src
+In main, add 5 lines to declare each of the 5 variables s, t, s0, v0, and a on separate lines, probably as doubles
+Then prompt the user 4 times asking for values for each of each of these t, s0, v0, and a (use Console.promptDouble or Console.promptInt ) and save the input into the correct variable
+Calculate the resulting value of s and assign it to the variable
+Print out the result with a suitable message to the user
+Try at least 3 different sets of values for those four variables to see that s is given the correct value
