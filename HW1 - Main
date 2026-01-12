@@ -1,0 +1,27 @@
+Comp 170 – First Java Program 
+
+2. Content 
+Summary: Working from a simple Hello World program (or any simple starting 
+point of a program that *works*), make at least the changes and additions listed 
+below.  You can add more, try other things, but be sure your program compiles 
+without errors and runs correctly before turning it in.  If you have something that 
+is “good enough” you might save that as is and make a copy to continue trying 
+new things. 
+Programming is often about *trying* solutions and seeing what happens. 
+Use the Console methods print, println, and nextLine in your program to give 
+information to the user at the Console and get user input into your program.  You 
+may wish to also use System.out.println for output but it is not required. 
+See the textbook, Chapter 1, section 1.1, to understand the Console concept. 
+Your Virtual Machine (VM) has a version of software called Console that 
+implements this concept. 
+Turn in your java program with these items: 
+a. In addition to Hello World, have your program print out a simple saying 
+you like. 
+b. Have the program prompt the user (you) for your name and save the 
+input in a variable. 
+c. Print out the results of doing some arithmetic like 1+2+3+4. 
+d. Print out a longer saying of at least two lines. 
+e. Tell the user (you) goodbye in some form (possibly a different 
+language) when you finish. 
+***In Comp 170, you will get 0 (ZERO) points for programs that do not 
+compile in the correct version of the tools as used in class***
