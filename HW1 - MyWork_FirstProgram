@@ -1,0 +1,22 @@
+public class FirstProgram // copy this program to a new <name>.java file - right-click src
+// use Refactor => Copy Class to do this; type in the new class name, then click OK
+{
+    public static void main(String[] args) {
+        // print two messages on the console using sop and Console.println
+        System.out.println("Welcome!");
+        Console.println("This is COMP 170!!");
+
+        // now prompt the user for their name, read it into a Java String, and say hello to them
+        Console.print("Please enter your name: ");
+        String name = Console.nextLine();
+        Console.println("Hello, " + name + "!");
+
+        Console.println(2 + 4 + 6 + 8);
+
+        System.out.println("Thanks for testing out the code");
+        System.out.println("Hope to see you soon " + name);
+
+        System.out.println();
+        System.out.println("Goodbye, " + name);
+    }
+}
