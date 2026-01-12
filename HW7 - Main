@@ -1,0 +1,11 @@
+Write a printGPA method that satisfies the requirements for this Exercise. Test your method with at least three test cases using different length names and varying numbers of grade.  Turn in your .java and a screen shot of you code working showing the three tests.
+
+Here are two example dialogues:
+
+Enter a student record: Maria 5 72 91 84 89 78
+Maria's grade is 82.8
+
+Enter a student record: Jordan 4 86 71 62 90
+Jordan's grade is 77.25
+
+ 
